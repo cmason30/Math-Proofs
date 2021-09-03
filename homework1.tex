@@ -1,0 +1,122 @@
+\documentclass[12pt,oneside]{article}
+
+% This package simply sets the margins to be 1 inch.
+\usepackage[margin=1in]{geometry}
+
+% These packages include nice commands from AMS-LaTeX
+\usepackage{amssymb,amsmath,amsthm}
+
+% Make the space between lines slightly more
+% generous than normal single spacing, but compensate
+% so that the spacing between rows of matrices still
+% looks normal.  Note that 1.1=1/.9090909...
+\renewcommand{\baselinestretch}{1.1}
+\renewcommand{\arraystretch}{.91}
+
+% Define an environment for exercises.
+\newenvironment{exercise}[1]{\vspace{.1in}\noindent\textbf{Exercise #1 \hspace{.05em}}}{}
+
+% define shortcut commands for commonly used symbols
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\calP}{\mathcal{P}}
+
+\DeclareMathOperator{\vsspan}{span}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+% If you use Overleaf, the name of the project will be determined by
+% what you enter as the document title.
+\title{Math 290 Section 1 Homework}
+
+\begin{flushright}
+\textsc{Colin Mason}  \\
+Math 290 Sec 3\\
+September 2, 2021
+\end{flushright}
+
+\begin{center}
+\textsf{Assignment 1} \\
+\textsf{Exercises: 1.1 - 1.8}
+\end{center}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{exercise}{1.1}
+ Each of the following sets is written in set-builder notation. Write the
+set by listing its elements. Also state the cardinality of each set.
+
+
+\end{exercise}
+
+\begin{proof}[(a) $S_1 = \{n \in \N : 5 < |n| 11\}$]
+\item$S_1 = \{6, 7, 8, 9, 10 \}$
+\end{proof}
+
+\begin{proof}[(b) $S_2 = \{n \in \Z : 5 < |n| 11\}$]
+\item$S_2 = \{-6, 6, -7, 7, -8, 8,-9, 9,-10, 10 \}$
+\end{proof}
+
+\begin{proof}[(c) $S_3 = \{n \in \R : x^2 +2 = 0\}$]
+\item$S_3 = \emptyset$
+\end{proof}
+
+\begin{proof}[(d) $S_4 = \{n \in \C : x^2 +2 = 0\}$]
+
+\end{proof}
+
+\begin{proof}[(e) $S_5 = \{n \in \Z : t^5 < 1000\}$]
+
+\end{proof}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{exercise}{1.2}
+Rewrite each of the following sets in the form
+$\{x \in S : \text{some property on x}\}$,
+just as we did in (1.6) above, by finding an appropriate property
+
+
+\end{exercise}
+
+\begin{proof}[(a) $A_1 = \{1, 3, 5, 7, 9 ...\} \text{ where } S = \N$]
+
+\item$A_1 = \{x \in S: \text{x is an odd number}\}$
+
+\end{proof}
+
+\begin{proof}[(b) $A_1 = \{1, 8, 27, 64 ...\} \text{ where } S = \N$]
+\item$A_2 = \{x \in S: x^3\}$
+\end{proof}
+
+\begin{proof}[(c) $A_3 = \{1, 3\} \text{ where } S = \{-1, 0 1\}$]
+\item$A_3 = \{x\in S: x \leq 1\}$
+\end{proof}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{exercise}{1.8}
+Two sets $S$, $T$ are disjoint if they share no elements. In other words
+$S \cap T= \emptyset$. Which of the following sets are disjoint? Give reasons.
+\end{exercise}
+
+\begin{proof}
+The proof goes here.
+\end{proof}
+
+
+%---------------------------------
+% Don't change anything below here
+%---------------------------------
+
+
+\end{document}
