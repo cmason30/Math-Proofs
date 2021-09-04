@@ -55,22 +55,37 @@ set by listing its elements. Also state the cardinality of each set.
 \end{exercise}
 
 \begin{proof}[(a) $S_1 = \{n \in \N : 5 < |n| 11\}$]
+
 \item$S_1 = \{6, 7, 8, 9, 10 \}$
+\item$|S_1| = 5$
+
 \end{proof}
 
 \begin{proof}[(b) $S_2 = \{n \in \Z : 5 < |n| 11\}$]
+
 \item$S_2 = \{-6, 6, -7, 7, -8, 8,-9, 9,-10, 10 \}$
+\item$|S_2| = 10$
+
 \end{proof}
 
 \begin{proof}[(c) $S_3 = \{n \in \R : x^2 +2 = 0\}$]
+
 \item$S_3 = \emptyset$
+\item$|S_3| = 0$
+
 \end{proof}
 
 \begin{proof}[(d) $S_4 = \{n \in \C : x^2 +2 = 0\}$]
 
+\item$S_4 = \{0-i\sqrt{2}, 0 + i\sqrt{2}\}$
+\item$|S_4| = 2$
+
 \end{proof}
 
 \begin{proof}[(e) $S_5 = \{n \in \Z : t^5 < 1000\}$]
+
+\item$S_5 = \{-3,-2,-1, 0,1,2,3\}$
+\item $|S_5| = 7$
 
 \end{proof}
 
@@ -94,23 +109,187 @@ just as we did in (1.6) above, by finding an appropriate property
 \end{proof}
 
 \begin{proof}[(b) $A_1 = \{1, 8, 27, 64 ...\} \text{ where } S = \N$]
-\item$A_2 = \{x \in S: x^3\}$
+
+\item$A_2 = \{x \in S: \text{x is the cube of any natural number.}\}$
+
 \end{proof}
 
 \begin{proof}[(c) $A_3 = \{1, 3\} \text{ where } S = \{-1, 0 1\}$]
-\item$A_3 = \{x\in S: x \leq 1\}$
+
+\item$A_3 = \{x\in S: \text{x is different than 1}\}$
+
+\end{proof}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{exercise}{1.3}
+Write the following sets in set-builder notation
+
+\end{exercise}
+
+\begin{proof}[(a) $A = \{..., -10, -5, 0, 5, 10, 15, ...\}$]
+
+\item$A = \{x \in \Z: 5x \}$
+
+\end{proof}
+
+\begin{proof}[(b) $B = \{..., -7, -2, 3, 8, 13, 18,  ...\}$]
+
+\item$B = \{x \in \Z: 5x+3\}$
+
+\end{proof}
+
+\begin{proof}[(c) $C = \{1, 16, 81, 256, ...\}$]
+
+\item$C = \{x \in \N: x^4\}$
+
+\end{proof}
+
+\begin{proof}[(d) $D = \{..., 1/4, 1/2, 1, 2, 4, 8, 16, ...\}$]
+
+\item$D = \{x \in \Z: 2^{x}\}$
+
 \end{proof}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\begin{exercise}{1.4}
+Give specific examples of sets $A$, $B$, and $C$ satisfying the following
+conditions (in each part, separately):
+
+\end{exercise}
+
+\begin{proof}[(a) $A \in B, B \in C, A \notin C$]
+
+\item$A = \{1\}$
+\item$B = \{\{1\}\}$
+\item$C = \{\{\{1\}\}\}$
+
+\end{proof}
+
+\begin{proof}[(b) $A \in B, B \subseteq C, A \nsubseteq C$]
+
+\item$A = \{1\}$
+\item$B = \{\{1\}\}$
+\item$C = \{\{1\}\}$
+
+\end{proof}
+
+\begin{proof}[(c) $A \subset B, B \in C, A \in C$]
+
+\item$A = \{1, 2\}$
+\item$B = \{1, 2, 3\}$
+\item$C = \{\{1, 2, 3\}, \{1, 2\}\}$
+
+\end{proof}
+
+\begin{proof}[(d) $A \cap B \subseteq C, A \nsubseteq C, B \nsubseteq C$]
+
+\item$C = \{1\}$
+\item$A = \{1, 2\}$
+\item$C = \{1, 3\}$
+
+\end{proof}
+
+\begin{proof}[(e) $A \cap C = \emptyset, A \subseteq B, |B \cap C| = 3$]
+
+\item$A = \{1\}$
+\item$C = \{3,4,5,6\}$
+\item$B = \{1,4,5,6\}$
+
+\end{proof}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{exercise}{1.5}
+Let $A = \{1, 2\}$. Find P(A), and then find P(P(A)). What are the cardinalities of these three sets?
+
+
+\end{exercise}
+
+\begin{proof}[Answers]
+    
+
+\item$P(A) = \{\{1, 2\}, \{2\}, \{1\}, \{\}$
+
+\item$P(P(A)) = \{\{\{1, 2\}, \{2\}, \{1\}, \{\}\}, \{\{2\}, \{1\}, \{\}\}, \{\{1, 2\}, \{1\}, \{\}\}, \\ \{\{1\}, \{\}\}, \{\{1, 2\}, \{2\}, \{\}\}, \{\{2\}, \{\}\}, \{\{1, 2\}, \{\}\}, \{\{\}\}, \\ \{\{1, 2\}, \{2\}, \{1\}\}, \{\{2\}, \{1\}\}, \{\{1, 2\}, \{1\}\}, \{\{1\}\}, \{\{1, 2\}, \{2\}\},\\ \{\{2\}\}, \{\{1, 2\}\}, \{\}\}$
+
+\item$|A| = 2$\item$|P(A)| = 4$\item$|P(P(A))| = 16$
+\end{proof}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{exercise}{1.6}
+Let $a, b \in \R \text{ with } a < b$. The closed interval $[a, b]$ is the set $\{x \in \R :a \leq x \leq b\}$. Similarly, the open interval $(a, b)$ is the set $\{x \in \R : a < x < b\}$. Let $P = [3,7]$, $Q=[7,9]$, and $R = [-3, 8]$.
+
+\end{exercise}
+
+\begin{itemize}
+    \item[(a)] $P \cap Q = \{7\}$
+    \item[(b)] $P \cup Q = [3,9]$
+    \item[(c)] $P - Q = \{x \in \R : 3 < x <7\}$
+    \item[(d)] $Q - P = \{x \in \R : 7 < x <9\}$
+    \item[(e)] $(R \cup P) - Q= \{x \in \R : 3 < x <7\}$
+    \item[(f)] $(P \cup Q) \cap R = [3, 8]$
+    \item[(g)] $P \cup (Q \cap R) = [3, 8]$
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{exercise}{1.7}
+Consider the following blank Venn diagram for the three sets $A, B, C$.
+
+\end{exercise}
+
+\begin{proof}[Answers at end of PDF file.]
+
+\end{proof}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{exercise}{1.8}
 Two sets $S$, $T$ are disjoint if they share no elements. In other words
 $S \cap T= \emptyset$. Which of the following sets are disjoint? Give reasons.
 \end{exercise}
 
-\begin{proof}
-The proof goes here.
+\begin{proof}[(a) The set of odd integers and the set of even integers]
+
+\item Disjoint. No integer can be even and odd.
+
+\end{proof}
+
+\begin{proof}[(b)  The natural numbers and the complex numbers.]
+
+\item Not disjointed. Whole numbers can be complex (ex. r + 0i).
+
+\end{proof}
+
+\begin{proof}[(c) The prime numbers and the composite numbers.]
+
+\item Disjoint. No number can be composite and prime.
+
+\end{proof}
+
+\begin{proof}[(d) The rational numbers and the irrational numbers.]
+
+\item Disjoint. No real number can be rational and irrational.
+
+\end{proof}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\begin{exercise}{1.9}
+Find some universal set $U$ and subsets $S,T,U \subseteq U$, such that $|S-T| = 3$, $|T-S| = 1$, $|S \cup T| = 6$, $|\overline{S}| = 2$
+\end{exercise}
+
+\begin{proof}[Answers]
+
+\item$S=\{2,3,4,5,6\}$
+\item$T= \{1,2\}$
+\item$U=\{1,2,3,4,5,6,7\}$
+
 \end{proof}
 
 

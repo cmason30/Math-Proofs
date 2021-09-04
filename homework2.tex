@@ -1,0 +1,203 @@
+\documentclass[12pt,oneside]{article}
+
+% This package simply sets the margins to be 1 inch.
+\usepackage[margin=1in]{geometry}
+
+% These packages include nice commands from AMS-LaTeX
+\usepackage{amssymb,amsmath,amsthm}
+
+% Make the space between lines slightly more
+% generous than normal single spacing, but compensate
+% so that the spacing between rows of matrices still
+% looks normal.  Note that 1.1=1/.9090909...
+\renewcommand{\baselinestretch}{1.1}
+\renewcommand{\arraystretch}{.91}
+
+% Define an environment for exercises.
+\newenvironment{exercise}[1]{\vspace{.1in}\noindent\textbf{Exercise #1 \hspace{.05em}}}{}
+
+% define shortcut commands for commonly used symbols
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\calP}{\mathcal{P}}
+
+\DeclareMathOperator{\vsspan}{span}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+% If you use Overleaf, the name of the project will be determined by
+% what you enter as the document title.
+\title{Math 290 Section 2 Homework}
+
+\begin{flushright}
+\textsc{Colin Mason}  \\
+Math 290 Sec 3\\
+September 4, 2021
+\end{flushright}
+
+\begin{center}
+\textsf{Assignment 1} \\
+\textsf{Exercises: 2.1 - 2.5}
+\end{center}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{exercise}{2.1}
+Sketch each of the following sets in the Cartesian plane $\R^2$
+
+
+\end{exercise}
+
+\begin{proof}[Answers at end of PDF file.]
+
+\end{proof}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{exercise}{2.2}
+Let $A = \{s, t\} $ and $ B = \{0, 9, 7\}$. Write the following sets by listing
+all of their elements.
+
+\end{exercise}
+
+\begin{itemize}
+    \item[(a)] $A \times B$
+    \subitem Answer: $\{(s, 0), (t, 0), (t, 9), (s, 9), (t, 7), (s, 7)\}$
+    \item[(b)] $B \times A$  
+    \subitem Answer: $\{(7, t), (0, s), (9, s), (9, t), (0, t), (7, s)\}$
+    \item[(c)] $A^2$ 
+    \subitem Answer: $\{(s, s), (t, s), (t, t), (s, t)\}$
+    \item[(d)] $B^2$
+    \subitem Answer: $\{(9, 0), (0, 0), (7, 0), (7, 9), (9, 9), (0, 7), (7, 7), (0, 9), (9, 7)\}$
+    \item[(e)] $\emptyset \times A$
+    \subitem Answer: $\emptyset$
+    
+
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{exercise}{2.3}
+Answer each of the following questions with “True” or “False” and
+then provide a reason for your answer.
+
+\end{exercise}
+
+\begin{proof}[(a) If $|A| = 3$ and $|B| = 4$, then $ |A \times B| = 7$]
+
+\item True. If $A$ and $B$ are finite sets then $|A \times B|=|A| \cdot |B|$
+
+\end{proof}
+
+\begin{proof}[(b) It is always true that $A \times B = B \times A$ when $A$ and $B$ are sets.]
+
+\item False. $A \times B \neq B \times A$
+
+\end{proof}
+
+\begin{proof}[(c)] 
+$\emph{Assume $I$ is an indexing set, and let $S_i$ be a set for each $i \in I$. We always have}$ \\ $\emph{$\bigcap_{i\in I}S_i \subseteq \bigcup_{i\in I}S_i$}$
+
+
+\item True. Given the union of sets A and intersection of sets B, the intersection will always be a subset of the union of sets.
+
+\end{proof}
+
+\begin{proof}[(d) There exist distinct sets $S_1, S_2, S_3, . . .$, each of which is infinite, but $\bigcap_{i=1}^\infty S_i$ has one element.]
+
+\item True. Example: sets in ranges $(-1/n, 1/n)$ which converge on zero will have zero if intersected.
+
+\end{proof}
+
+\begin{proof}[(e) The set $A^4$ consists of ordered triples from $A$]
+
+\item False. $A \times A \times A \times A$ will consist of ordered QUADS.
+
+\end{proof}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{exercise}{2.4}
+Using the notations from Example 2.10, write the following sets (possibly using intersections or unions).
+
+\end{exercise}
+
+\begin{proof}[(a)]
+$\emph{The set of words containing all four of the letters “a,w,x,y.”}$
+\begin{itemize}
+    
+\item[] Let $S = \{a, w, x, y\}$
+\subitem Answer: $\bigcap_{\alpha \in S} W_{\alpha}$
+\end{itemize}
+\end{proof}
+
+\begin{proof}[(b)]
+$\emph{The set of words not containing any of the letters “s,t,u.”}$
+\begin{itemize}
+\item[] Let $S = \{s,t,u\}$
+\subitem Answer: $\overline{\bigcup_{\alpha \in S} W_{\alpha}}$
+\end{itemize}
+\end{proof}
+
+\begin{proof}[(c)]
+$\emph{The set of words containing both “p,r” but not containing any of the standard vowels.} \\ \emph{(Is set empty?)}$
+\begin{itemize}
+    
+
+\item[] Let $S = \{p,r\}$
+\item[] Let $V = \{a,e,i,o,u\}$
+\subitem Answer: $\bigcap_{\alpha \in S}W_{\alpha} \cap \overline{\bigcup_{\alpha \in V} W_{\alpha}}$   Set is most likely empty.
+
+\end{itemize}
+\end{proof}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{exercise}{2.5}
+For each number $r \in \R$, consider the “parabola shifted by r” defined
+as:
+
+\begin{center}
+$P_r = \{(x,y) \in \R^2: y = x^2 + r\}$
+\end{center}
+
+Describe the following sets in set-builder notation; the answer should have no reference to “r.” Also graph the sets in the Cartesian plane.
+
+\end{exercise}
+
+\begin{itemize}
+    \item[(a)] $\bigcup_{r \in \R} P_r$
+    \subitem Answer: $\{\R\}$
+    \item[(b)] $\bigcup_{r > 0)} P_r$
+    \subitem Answer: $\{(x,y) \in \R^2: y < x^2\}$
+    \item[(c)] $\bigcup_{r \neq 0} P_r$
+    \subitem Answer: $\{(x,y) \in \R^2: \text{ not in } y = x^2\}$
+    \item[(d)] $\bigcap_{r \in \R} P_r$
+    \subitem Answer: $\emptyset$
+    \item[(e)] $\bigcap_{r > 0} P_r$
+    \subitem Answer: $\emptyset$
+    
+\end{itemize}
+
+\begin{proof}[Figures at end of PDF file.]
+
+\end{proof}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%---------------------------------
+% Don't change anything below here
+%---------------------------------
+
+
+\end{document}
